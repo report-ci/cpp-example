@@ -2,3 +2,6 @@
 	path = libs/bandit
 	url = https://github.com/banditcpp/bandit.git
 	branch = headers-only
+[submodule "libs/catch2"]
+	path = libs/catch2
+	url = https://github.com/catchorg/Catch2.git

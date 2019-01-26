@@ -3,6 +3,7 @@ project(cpp_example)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(libs)
+include_directories(libs libs/catch2/single_include)
+
 
 add_subdirectory(test)

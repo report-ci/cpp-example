@@ -5,7 +5,7 @@ using namespace bandit;
 
 go_bandit([]() {
     describe("our first test", []() {
-        it("should fail", [&]() {
+        it("might fail", [&]() {
             AssertThat(5, Equals(6));
         });
     });
