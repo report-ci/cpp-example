@@ -5,3 +5,6 @@
 [submodule "libs/catch2"]
 	path = libs/catch2
 	url = https://github.com/catchorg/Catch2.git
+[submodule "libs/cpputest"]
+	path = libs/cpputest
+	url = https://github.com/cpputest/cpputest.git

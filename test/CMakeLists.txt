@@ -11,3 +11,7 @@ add_test(NAME bandit COMMAND ${REDIRECT} "$<TARGET_FILE:bandit> --reporter=xml" 
 
 add_executable(catch catch.cpp)
 add_test(NAME catch COMMAND $<TARGET_FILE:catch> --reporter=xml --out=${CMAKE_CURRENT_BINARY_DIR}/catch_log.xml)
+
+add_executable(cpputester cpputest.cpp)
+target_link_libraries(cpputester PUBLIC CppUTest)
+add_test(NAME cpputest COMMAND $<TARGET_FILE:cpputester> --ojunit -k CppUTest)
