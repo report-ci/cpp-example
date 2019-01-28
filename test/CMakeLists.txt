@@ -15,3 +15,8 @@ add_test(NAME catch COMMAND $<TARGET_FILE:catch> --reporter=xml --out=${CMAKE_CU
 add_executable(cpputester cpputest.cpp)
 target_link_libraries(cpputester PUBLIC CppUTest)
 add_test(NAME cpputest COMMAND $<TARGET_FILE:cpputester> --ojunit -k CppUTest)
+
+add_executable(cute cute.cpp)
+add_test(NAME cute COMMAND $<TARGET_FILE:cute>)
+
+

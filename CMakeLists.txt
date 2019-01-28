@@ -3,7 +3,7 @@ project(cpp_example)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(libs libs/catch2/single_include)
+include_directories(libs libs/catch2/single_include libs/cute/cute)
 
 add_subdirectory(libs/cpputest)
 add_subdirectory(test)
