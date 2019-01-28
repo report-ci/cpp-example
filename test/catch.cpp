@@ -5,19 +5,22 @@ unsigned int Factorial( unsigned int number ) {
     return number <= 1 ? number : Factorial(number-1)*number;
 }
 
-TEST_CASE( "Factorials are computed", "[factorial]" )
+TEST_CASE("Factorials are computed", "[factorial]" )
 {
     REQUIRE( Factorial(1) == 1 );
-    REQUIRE( Factorial(2) == 2 );
-    REQUIRE( Factorial(3) == 6 );
+    CHECK(   Factorial(2) == 2 );
+    CHECK(   Factorial(3) == 6 );
+    CHECK_NOFAIL(false);
+
+    SUCCEED("foobar");
     REQUIRE( Factorial(10) == 3628800 );
 }
 
-TEST_CASE( "vectors can be sized and resized", "[vector]" )
+TEST_CASE( "vectors can be sized and resized", "[vector][!mayfail]" )
 {
 
     std::vector<int> v( 5 );
-
+    FAIL("Foobar");
     REQUIRE( v.size() == 5 );
     REQUIRE( v.capacity() >= 5 );
 
