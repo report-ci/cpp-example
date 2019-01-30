@@ -9,7 +9,7 @@ void thisIsATest() {
     first = "Hello";
     second = "World";
     expected = "Hello World";
-    ASSERT_EQUAL(expected, first + " " + second);
+    ASSERT_EQUAL(expected, first + "-" + second);
 }
 
 bool runAllTests(int argc, char const *argv[]) {
