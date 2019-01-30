@@ -9,5 +9,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(libs libs/cute/cute)
 
+option(EXTENSIONS "" OFF)
+option(C++11 "" ON)
+option(TESTS "" OFF)
+
 add_subdirectory(libs/cpputest)
 add_subdirectory(test)
