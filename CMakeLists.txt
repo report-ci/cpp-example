@@ -19,7 +19,9 @@ include_directories(libs libs/cute/cute)
 option(EXTENSIONS "" OFF)
 option(C++11 "" ON)
 option(TESTS "" OFF)
-find_package (Threads)
+
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package (Threads REQUIRED)
 
 
 add_subdirectory(libs/cpputest)
