@@ -10,6 +10,7 @@ addons:
     packages:
       - cmake
       - cxxtest
+      - googletest
 
 script:
   - mkdir build &&  cd build
@@ -24,3 +25,4 @@ after_script:
   - python upload.py --framework cpputest --include */cpputest*.xml
   - python upload.py --framework cute --include */cute*.xml
   - python upload.py --framework cxxtest --include */cxxtest.xml
+  - python upload.py --framework gtest --include */gtest.xml
