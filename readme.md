@@ -17,4 +17,4 @@ after_script:
   - curl -s https://report.ci/upload.py | python - --framework cute --include */cute*.xml
 ```
 
-Note that *cute* and *cpputest* do not have autodetection.
+Note that *cute*, *cpputest* and *cxxtest* do not have autodetection.

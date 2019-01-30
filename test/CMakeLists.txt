@@ -16,5 +16,5 @@ add_test(NAME cpputest COMMAND $<TARGET_FILE:cpputester> -ojunit -k CppUTest)
 add_executable(cute cute.cpp)
 add_test(NAME cute COMMAND $<TARGET_FILE:cute>)
 
-CXXTEST_ADD_TEST(cxxtest cxxtest_impl.cpp ${CMAKE_CURRENT_SOURCE_DIR}/cxxtest.cpp)
-add_test(NAME cxxtester COMMAND ${REDIRECT} $<TARGET_FILE:cxxtest> cxxtest.xml)
+CXXTEST_ADD_TEST(cxxtester cxxtest_impl.cpp ${CMAKE_CURRENT_SOURCE_DIR}/cxxtest.cpp)
+add_test(NAME cxxtest COMMAND ${REDIRECT} $<TARGET_FILE:cxxtester> cxxtest.xml)
