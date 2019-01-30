@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.8)
 project(cpp_example)
 
 find_package(Python REQUIRED Interpreter)
