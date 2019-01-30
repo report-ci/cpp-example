@@ -12,11 +12,11 @@ public:
     void testXYZ()
     {
         TS_ABORT();
-        TS_ASSERT(0);
+        TS_ASSERT(true);
     }
 
     void testBar()
     {
-        throw std::runtime_error("blablubb");
+       // throw std::runtime_error("Some exception");
     }
 };
