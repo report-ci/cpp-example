@@ -10,7 +10,7 @@ addons:
     packages:
       - cmake
       - cxxtest
-      - googletest
+      - libgtest-dev
 
 script:
   - mkdir build &&  cd build
