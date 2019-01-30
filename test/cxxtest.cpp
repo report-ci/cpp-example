@@ -6,17 +6,16 @@ public:
     void testAddition(void)
     {
         TS_ASSERT(1 + 1 > 1);
-        TS_ASSERT_EQUALS(1 + 1, 2);
+        TS_ASSERT_EQUALS(2 + 1, 2);
     }
 
     void testXYZ()
     {
-        TS_ABORT();
-        TS_ASSERT(true);
+        TS_ASSERT(false);
     }
 
     void testBar()
     {
-       // throw std::runtime_error("Some exception");
+        throw std::runtime_error("Some exception");
     }
 };
