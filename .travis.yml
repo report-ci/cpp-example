@@ -19,8 +19,9 @@ script:
   - ctest . -C Debug -V
 
 after_script:
+  - ls
   - curl -s https://raw.githubusercontent.com/report-ci/scripts/master/upload.py > upload.py
   - python upload.py --framework bandit
   - python upload.py --framework cpputest
-  - python upload.py --framework cute --file_list cute.xml
+  - python upload.py --framework cute --include *cute*.xml
   - python upload.py --framework cxxtest
