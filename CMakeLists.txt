@@ -19,6 +19,7 @@ include_directories(libs libs/cute/cute)
 option(EXTENSIONS "" OFF)
 option(C++11 "" ON)
 option(TESTS "" OFF)
+find_package (Threads)
 
 
 add_subdirectory(libs/cpputest)
