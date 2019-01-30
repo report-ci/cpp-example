@@ -20,7 +20,7 @@ CXXTEST_ADD_TEST(cxxtester cxxtest_impl.cpp ${CMAKE_CURRENT_SOURCE_DIR}/cxxtest.
 add_test(NAME cxxtest COMMAND ${REDIRECT} $<TARGET_FILE:cxxtester> cxxtest.xml)
 
 add_executable(gtester gtest.cpp)
-target_link_libraries(gtest  ${GTEST_LIBRARY} ${GTEST_MAIN_LIBRARY})
+target_link_libraries(gtester gtest)
 
-add_test(NAME gtest COMMAND $<TARGET_FILE:gtester>)
+add_test(NAME gtest COMMAND $<TARGET_FILE:gtester> --gtest_output=xml:gtest.xml)
 

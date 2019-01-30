@@ -6,10 +6,14 @@ find_package(CxxTest)
 include_directories(${CXXTEST_INCLUDE_DIR})
 
 set(CMAKE_CXX_STANDARD 14)
+set(GOOGLETEST_ROOT libs/googletest/googletest CACHE STRING "Google Test source root")
 
-find_package(GTest REQUIRED)
+include_directories(${GOOGLETEST_ROOT} ${GOOGLETEST_ROOT}/include)
 
-include_directories(${GTEST_INCLUDE_DIR})
+file(GLOB GOOGLETEST_SOURCES ${GOOGLETEST_ROOT}/src/*.cc)
+
+add_library(gtest ${GOOGLETEST_SOURCES})
+
 include_directories(libs libs/cute/cute)
 
 option(EXTENSIONS "" OFF)
