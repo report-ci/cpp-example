@@ -23,4 +23,4 @@ after_script:
   - python upload.py --framework bandit
   - python upload.py --framework cpputest
   - python upload.py --framework cute --include */cute*.xml
-  - python upload.py --framework cxxtest
+  - python upload.py --framework cxxtest --include */cxxtest.xml
