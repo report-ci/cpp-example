@@ -8,3 +8,6 @@
 [submodule "libs/cute"]
 	path = libs/cute
 	url = https://github.com/PeterSommerlad/CUTE.git
+[submodule "libs/googletest"]
+	path = libs/googletest
+	url = https://github.com/google/googletest.git
