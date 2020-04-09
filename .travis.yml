@@ -20,4 +20,4 @@ script:
 
 after_script:
   - curl -s https://raw.githubusercontent.com/report-ci/scripts/master/report.py > report.py
-  - python report.py --include-as-cpputest *./cpputest*.xml --include-as-cute */cute*.xml --include-as-cxxtest */cxxtest.xml --include-as-gtest */gtest.xml
+  - python report.py --include-as-cpputest */cpputest*.xml --include-as-cute */cute*.xml --include-as-cxxtest */cxxtest.xml --include-as-gtest */gtest.xml
