@@ -12,12 +12,12 @@ TEST_GROUP(ClassName)
 
 TEST(ClassName, Create)
 {
-    CHECK(true);
+    CHECK(false);
     CHECK_EQUAL(1,1);
-    LONGS_EQUAL(1,1);
+    LONGS_EQUAL(2,1);
     DOUBLES_EQUAL(1.000, 1.001, .01);
     STRCMP_EQUAL("hello", "hello");
-  //  FAIL("The prior tests pass, but this one doesn't");
+    FAIL("The prior tests pass, but this one doesn't");
 }
 
 #include "CppUTest/CommandLineTestRunner.h"

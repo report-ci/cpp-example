@@ -6,7 +6,7 @@ using namespace bandit;
 go_bandit([]() {
     describe("our first test", []() {
         it("might fail", [&]() {
-            AssertThat(5, Equals(5));
+            AssertThat(6, Equals(5));
         });
     });
 });
@@ -18,7 +18,7 @@ go_bandit([]()
     {
 
         const auto add = [](int i, int j) { return i + j; };
-        const auto subtract = [](int i, int j) { return i - j; };
+        const auto subtract = [](int i, int j) { return i + j; };
 
 
         it("can add", [&]()
